@@ -5,5 +5,6 @@ storeApp.controller('storeCtrl', function($scope, $http){
   $http.get('http://sneakpeeq-sites.s3.amazonaws.com/interviews/ce/feeds/store.js')
       .success(function(response){
         console.log(response);
+        $scope.products = response.products
       });
 });
