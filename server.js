@@ -7,7 +7,8 @@ const port       = process.env.PORT || 8080
 app.use(bodyParser.urlencoded());
 
 //serves static assets
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
+app.use('/node_modules', express.static(__dirname + '/node_modules'))
 
 //configures server
 app.listen(port);
