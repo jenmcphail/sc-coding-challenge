@@ -9,6 +9,7 @@
   "author": "Jen McPhail",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.9",
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
   }
