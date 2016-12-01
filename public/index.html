@@ -16,7 +16,7 @@
     <div ng-repeat='product in products'>
      <img src="{{products[$index].mainImage.ref}}"> 
       {{products[$index].name}}
-      {{products[$index].msrpInCents}}
+      {{(products[$index].msrpInCents/100) | currency}}
     </div>
   </section>
 
