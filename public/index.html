@@ -8,10 +8,15 @@
   <script type="text/javascript" src="scripts/app.js"></script>
 </head>
 <body ng-app='storeApp'>
-  <div ng-controller='storeCtrl'>
-    <h1>Controller goes here</h1>
-    {{products[0].name}}
-  </div>
+
+  <section ng-controller='storeCtrl'>
+    <div>
+      <h1>{{response.pageTitle}}</h1>
+    </div>
+    <div ng-repeat='product in products'>
+      {{products[$index].name}}
+    </div>
+  </section>
 
 </body>
 </html>
