@@ -14,7 +14,9 @@
       <h1>{{response.pageTitle}}</h1>
     </div>
     <div ng-repeat='product in products'>
+     <img src="{{products[$index].mainImage.ref}}"> 
       {{products[$index].name}}
+      {{products[$index].msrpInCents}}
     </div>
   </section>
 
