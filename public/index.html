@@ -2,8 +2,9 @@
 <html ng-app='storeApp'>
 <head>
   <title>Jen McPhail's Symphony Commerce Coding Challenge</title>
-  <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="styles/style.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
   <!-- Mobile Responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular -->
@@ -11,14 +12,14 @@
   <!-- Angular Controller -->
   <script type="text/javascript" src="scripts/app.js"></script>
 </head>
-<body>
-
-  <section ng-controller='storeCtrl'>
-    <div class='heading'>
-      <h1>{{response.pageTitle}}</h1>
-      <p>{{response.extraInfo}}</p>
-    </div>
-
+<body ng-controller='storeCtrl'>
+  
+  <header class='header'>
+    <h1 class='title'>{{response.pageTitle}}</h1>
+    <p class='subtitle'>{{response.extraInfo}}</p>
+  </header>
+  
+  <section class='cards'>
     <div class='wrapper'>
       <div class='card' ng-repeat='product in products'>
         <img class='product-image' src='{{products[$index].mainImage.ref}}'> 

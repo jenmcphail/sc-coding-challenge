@@ -32,10 +32,9 @@ css: {
   tasks: ['cssmin', 'autoprefixer']
     }
   },
-  
   });
+grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-autoprefixer');
-grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.registerTask('default',['watch']);
 }
