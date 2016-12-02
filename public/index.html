@@ -4,6 +4,8 @@
   <title>Jen McPhail's Symphony Commerce Coding Challenge</title>
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- Mobile Responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular -->
   <script src="../node_modules/angular/angular.js"></script>
   <!-- Angular Controller -->
@@ -12,9 +14,9 @@
 <body ng-app='storeApp'>
 
   <section ng-controller='storeCtrl'>
-    <div>
+    <div class='heading'>
       <h1>{{response.pageTitle}}</h1>
-      <h3>{{response.extraInfo}}</h3>
+      <p>{{response.extraInfo}}</p>
     </div>
 
     <div class='wrapper'>
