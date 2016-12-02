@@ -1,0 +1,19 @@
+/*CARDS*/
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  border: 1px solid black;
+  width: 33.33%;
+  margin: 1.5%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.product-image{
+  width: 75%;
+  height: auto;
+}

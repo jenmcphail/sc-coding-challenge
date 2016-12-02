@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Jen McPhail's Symphony Commerce Coding Challenge</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
   <!-- Angular -->
   <script src="../node_modules/angular/angular.js"></script>
   <!-- Angular Controller -->
@@ -12,11 +14,17 @@
   <section ng-controller='storeCtrl'>
     <div>
       <h1>{{response.pageTitle}}</h1>
+      <h3>{{response.extraInfo}}</h3>
     </div>
-    <div ng-repeat='product in products'>
-     <img src="{{products[$index].mainImage.ref}}"> 
-      {{products[$index].name}}
-      {{(products[$index].msrpInCents/100) | currency}}
+
+    <div class='wrapper'>
+      <div class='card' ng-repeat='product in products'>
+        <img class='product-image' src='{{products[$index].mainImage.ref}}'> 
+        <div class='card-content'>
+          <h4>{{products[$index].name}}</h4>
+          <p>{{(products[$index].msrpInCents/100) | currency}}</p>
+        </div>
+      </div>
     </div>
   </section>
 
