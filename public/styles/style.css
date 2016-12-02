@@ -2,7 +2,11 @@
 body{
   font-family: sans-serif;
   background-color: #91dbed;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+   background-image: url("https://www.transparenttextures.com/patterns/arches.png"); 
+  /*background-color: #4fb5f5;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
+ /* background-color: #2762a1;
+  background-image: url("https://www.transparenttextures.com/patterns/swirl.png");*/
 }
 
 /*HEADER*/
@@ -27,6 +31,7 @@ body{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   text-align: center;
   background-color: white;
+  border-radius: 5px;
 
 }
 
