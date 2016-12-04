@@ -6,6 +6,5 @@ storeApp.controller('storeCtrl', function($scope, $http){
       .success(function(response){
         console.log(response);
         $scope.response = response
-        $scope.products = response.products
       });
 });
