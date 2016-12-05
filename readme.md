@@ -1,7 +1,7 @@
 Welcome to the github repo of Jen McPhail's coding challenge for Symphony Commerce. 
 
 ##Installation Instructions
-To run the app locally, clone this repo and run `npm install` then `npm start` in your CLI to spin up a local server.
+To run the app locally, clone this repo and run `npm install` then `npm start` in your CLI to spin up a local server. Or [check out the live demo](https://symphony-commerce-challenge.herokuapp.com/).
 
 ##Technologies Used
 - Node
