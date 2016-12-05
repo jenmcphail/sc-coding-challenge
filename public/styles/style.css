@@ -65,6 +65,22 @@ body{
   font-size: 20px;
 }
 
+/*search bar media query for responsiveness
+*/
+@media only screen and (max-width:650px ){
+  .search-and-filter-form{
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
+
+
 /*CARDS*/
 .wrapper{
   display: -ms-flexbox;
