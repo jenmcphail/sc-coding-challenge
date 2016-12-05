@@ -25,19 +25,23 @@
       <div>
         <input type="text" name='query' placeholder='Search' ng-model='query.$'>
       </div>
-      <!-- <div>
-         <select ng-model="sortorder">
-          <option value="">-- Sort By --</option>
-          <option value=" ">Price High to Low</option>
-          <option value=" ">Price Low to High</option>
+      <div>
+         <select ng-model='sortOrder'>
+          <option value=''>-- Sort By --</option>
+          <option value='msrpInCents'>Price (low to high)</option>
+          <option value='-msrpInCents'>Price (high to low)</option>
+          <option value='name'>Alphabetical</option>
+          <option value='-name'>Reverse alphabetical</option>
+          <option value='createdAt'>Newest</option>
+          <option value='-createdAt'>Oldest</option>
         </select>
-      </div> -->
+      </div>
     </form>
   </section>
   
   <section class='cards'>
     <div class='wrapper'>
-      <div class='card' ng-repeat='product in response.products | filter: query'>
+      <div class='card' ng-repeat="product in response.products | filter: query | orderBy: sortOrder">
         <img class='product-image' src='{{product.mainImage.ref}}'> 
         <div class='card-content'>
           <h4 class='product-name'>{{product.name}}</h4>
