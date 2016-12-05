@@ -3,8 +3,8 @@
 <head>
   <title>Jen McPhail's Symphony Commerce Coding Challenge</title>
   <!-- Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.min.css">
   <!-- Mobile Responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular -->
@@ -20,13 +20,13 @@
     <p class='subtitle'>{{response.extraInfo}}</p>
   </header>
 
-  <section class='search-bars'>
-    <form>
+  <section class='search-form-container'>
+    <form class="search-and-filter-form">
       <div>
-        <input type="text" name='query' placeholder='Search' ng-model='query.$'>
+        <input class='search-input' type="text" name='query' placeholder='Search' ng-model='query.$'>
       </div>
       <div>
-         <select ng-model='sortOrder'>
+         <select class='select-input' ng-model='sortOrder'>
           <option value=''>-- Sort By --</option>
           <option value='msrpInCents'>Price (low to high)</option>
           <option value='-msrpInCents'>Price (high to low)</option>

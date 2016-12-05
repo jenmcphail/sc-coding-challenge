@@ -17,10 +17,10 @@ body{
 
 /*HEADER*/
 .header{
-  background-color: #1976D2;
+  background-color: #0d47a1;
   text-align: center;
-  padding: 0% 15% 2.5% 15%;
-  height: 200px;
+  padding: 5% 15% 5% 15%;
+  height: 300%;
   color: white;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +36,34 @@ body{
   margin-bottom: 2%;
 }
 
-/*SEARCH BARS*/
+/*SEARCH AND FILTER FORMS*/
+.search-and-filter-form{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.search-input, .select-input{
+  margin-top: 10%;
+  border: 1px solid #b7b7b7;
+  color: #0d47a1;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.2) inset;
+}
+
+.search-input{
+  padding: 5%;
+  font-size: 15px;
+}
+
+.select-input{
+  font-size: 20px;
+}
 
 /*CARDS*/
 .wrapper{
