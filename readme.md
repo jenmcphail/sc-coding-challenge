@@ -11,7 +11,10 @@ To run the app locally, clone this repo and run `npm install` then `npm start` i
 
 ##Process
 - My process began with planning. I wrote user stories, created wireframes (below), and tracked the progress of each feature with [Trello](https://trello.com/b/Ksj1F6pk/symphony-commerce-coding-challenge).
+<br>
+<br>
 <b>Wireframes:</b>
+<br>
 ![Mobile Wireframe](http://i.imgur.com/IUCXroz.png)
 ![Tablet Wireframe](http://i.imgur.com/IRMqVrV.png)
 ![Web Wireframe](http://i.imgur.com/I0B3S8x.png)
